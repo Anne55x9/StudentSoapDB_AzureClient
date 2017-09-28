@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="57c061ca-a5e2-485c-b11f-92a664049df2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://studentsoapazure.azurewebsites.net/StudentHandler.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="StudentHandler.xsd" MetadataType="Schema" ID="4aaebb34-246e-45bc-9d41-bd7fd716feef" SourceId="1" SourceUrl="http://studentsoapazure.azurewebsites.net/StudentHandler.svc?xsd=xsd2" />
+    <MetadataFile FileName="StudentHandler1.xsd" MetadataType="Schema" ID="ce1d3c32-236e-433b-9f8f-b9a7e2b3f319" SourceId="1" SourceUrl="http://studentsoapazure.azurewebsites.net/StudentHandler.svc?xsd=xsd1" />
+    <MetadataFile FileName="StudentHandler2.xsd" MetadataType="Schema" ID="25b15613-c190-4836-82e7-a69e5cf7a581" SourceId="1" SourceUrl="http://studentsoapazure.azurewebsites.net/StudentHandler.svc?xsd=xsd0" />
+    <MetadataFile FileName="StudentHandler.wsdl" MetadataType="Wsdl" ID="aafbc826-2c02-4753-b77e-0815b9858637" SourceId="1" SourceUrl="http://studentsoapazure.azurewebsites.net/StudentHandler.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
