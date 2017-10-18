@@ -101,6 +101,18 @@ namespace StudentSoapDB_AzureClient.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudent/AddStudent", ReplyAction="http://tempuri.org/IStudent/AddStudentResponse")]
         System.Threading.Tasks.Task AddStudentAsync(int id, string name);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudent/DeleteStudentById", ReplyAction="http://tempuri.org/IStudent/DeleteStudentByIdResponse")]
+        void DeleteStudentById(int Id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudent/DeleteStudentById", ReplyAction="http://tempuri.org/IStudent/DeleteStudentByIdResponse")]
+        System.Threading.Tasks.Task DeleteStudentByIdAsync(int Id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudent/UpdateStudent", ReplyAction="http://tempuri.org/IStudent/UpdateStudentResponse")]
+        void UpdateStudent(string id, string name);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IStudent/UpdateStudent", ReplyAction="http://tempuri.org/IStudent/UpdateStudentResponse")]
+        System.Threading.Tasks.Task UpdateStudentAsync(string id, string name);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -160,6 +172,22 @@ namespace StudentSoapDB_AzureClient.ServiceReference1 {
         
         public System.Threading.Tasks.Task AddStudentAsync(int id, string name) {
             return base.Channel.AddStudentAsync(id, name);
+        }
+        
+        public void DeleteStudentById(int Id) {
+            base.Channel.DeleteStudentById(Id);
+        }
+        
+        public System.Threading.Tasks.Task DeleteStudentByIdAsync(int Id) {
+            return base.Channel.DeleteStudentByIdAsync(Id);
+        }
+        
+        public void UpdateStudent(string id, string name) {
+            base.Channel.UpdateStudent(id, name);
+        }
+        
+        public System.Threading.Tasks.Task UpdateStudentAsync(string id, string name) {
+            return base.Channel.UpdateStudentAsync(id, name);
         }
     }
 }

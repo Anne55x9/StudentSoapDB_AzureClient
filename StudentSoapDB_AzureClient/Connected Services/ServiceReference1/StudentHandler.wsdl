@@ -56,6 +56,18 @@
   <wsdl:message name="IStudent_AddStudent_OutputMessage">
     <wsdl:part name="parameters" element="tns:AddStudentResponse" />
   </wsdl:message>
+  <wsdl:message name="IStudent_DeleteStudentById_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStudentById" />
+  </wsdl:message>
+  <wsdl:message name="IStudent_DeleteStudentById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteStudentByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IStudent_UpdateStudent_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStudent" />
+  </wsdl:message>
+  <wsdl:message name="IStudent_UpdateStudent_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateStudentResponse" />
+  </wsdl:message>
   <wsdl:portType name="IStudent">
     <wsdl:operation name="GetAllStudents">
       <wsdl:input wsaw:Action="http://tempuri.org/IStudent/GetAllStudents" message="tns:IStudent_GetAllStudents_InputMessage" />
@@ -72,6 +84,14 @@
     <wsdl:operation name="AddStudent">
       <wsdl:input wsaw:Action="http://tempuri.org/IStudent/AddStudent" message="tns:IStudent_AddStudent_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IStudent/AddStudentResponse" message="tns:IStudent_AddStudent_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStudentById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudent/DeleteStudentById" message="tns:IStudent_DeleteStudentById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudent/DeleteStudentByIdResponse" message="tns:IStudent_DeleteStudentById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStudent">
+      <wsdl:input wsaw:Action="http://tempuri.org/IStudent/UpdateStudent" message="tns:IStudent_UpdateStudent_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IStudent/UpdateStudentResponse" message="tns:IStudent_UpdateStudent_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IStudent" type="tns:IStudent">
@@ -112,6 +132,24 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="DeleteStudentById">
+      <soap:operation soapAction="http://tempuri.org/IStudent/DeleteStudentById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStudent">
+      <soap:operation soapAction="http://tempuri.org/IStudent/UpdateStudent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="BasicHttpsBinding_IStudent" type="tns:IStudent">
     <wsp:PolicyReference URI="#BasicHttpsBinding_IStudent_policy" />
@@ -145,6 +183,24 @@
     </wsdl:operation>
     <wsdl:operation name="AddStudent">
       <soap:operation soapAction="http://tempuri.org/IStudent/AddStudent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteStudentById">
+      <soap:operation soapAction="http://tempuri.org/IStudent/DeleteStudentById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateStudent">
+      <soap:operation soapAction="http://tempuri.org/IStudent/UpdateStudent" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

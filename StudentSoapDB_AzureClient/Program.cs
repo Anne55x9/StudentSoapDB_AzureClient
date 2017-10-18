@@ -26,9 +26,14 @@ namespace StudentSoapDB_AzureClient
                 Console.WriteLine(stu.StudentName);
 
                 Console.WriteLine("Studerendes id med navn test");
-                Student stu2 = client.GetStudentByName("test");
+                Student stu2 = client.GetStudentByName("Hansi");
                 Console.WriteLine(stu2.StudentId);
+                
+                client.AddStudent(8, "Kamsolle");
 
+                client.DeleteStudentById(7);
+
+                client.UpdateStudent("2","JO");
 
             }
 
